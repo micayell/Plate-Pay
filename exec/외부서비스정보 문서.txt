@@ -1,0 +1,33 @@
+외부서비스정보 문서
+
+- 소셜 인증 (Kakao)
+1. 카카오 소셜 로그인
+소셜 인증으로 kakao oauth 기반 소셜 인증을 사용합니다.
+
+KAKAO API KEY : 84d7c3edbf73551e3fcaf201f56d4ed3
+KAKAO_CLIENT_ID : c7b03e069625574a3cde960ec972f4d5
+KAKAO_CLIENT_SECRET : DJRAJ3PLmrehXsotKuvIfqZJUs8Ue2mJ
+
+2. 싸피 소셜 로그인
+소셜 인증으로 ssafy oauth 기반 소셜 인증을 사용합니다.
+
+SSAFY_CLIENT_ID : 1de0a8d6-f500-4643-b6ce-dff65087e7e1
+SSAFY_CLIENT_SECRET : 3ab34ccd-4caf-41bc-895c-109d8edc5225
+
+- 차량 인증
+Codef API
+차량 본인등록 확인을 위해 Codef API를 사용합니다.
+Codef API의 "자동차등록원부(갑)" API를 사용하여 정부24 기반 차량 인증을 진행합니다.
+
+- 싸피 금융 API
+계좌 결제 및 계좌 등록을 진행하기 위해 싸피 금융 API를 사용합니다.
+SSAFY_FINANCIAL_KEY : bab1335d4ac04c019f84397600ff1198
+
+- Roboflow API
+차량의 번호판 위치의 좌표를 얻기위해 사용합니다.
+# API 엔드포인트 (Roboflow API 직접 호출)
+REACT_APP_ROBOFLOW_API_URL=https://detect.roboflow.com
+REACT_APP_SPRING_API_URL=/api
+REACT_APP_ROBOFLOW_MODEL_ID=yolov8-anpr/1
+REACT_APP_ROBOFLOW_API_KEY=IMv3ZjNtl2lvMVUKOZCr
+REACT_APP_ROBOFLOW_CONFIDENCE=0.4

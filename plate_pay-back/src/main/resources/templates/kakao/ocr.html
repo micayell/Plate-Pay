@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>번호판 스캔 테스트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+        body { max-width: 720px; margin: 40px auto; padding: 0 16px; }
+        h1 { font-size: 1.4rem; }
+        .card { border: 1px solid #ddd; border-radius: 12px; padding: 16px; margin: 16px 0; }
+        .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        input[type="text"] { width: 100%; max-width: 420px; padding: 8px; }
+        input[type="file"] { padding: 6px 0; }
+        button { padding: 10px 14px; border: 1px solid #ccc; border-radius: 8px; background: #f6f6f6; cursor: pointer; }
+        button:hover { background: #eee; }
+        #preview { max-width: 100%; max-height: 260px; display: none; border-radius: 8px; }
+        pre { background: #111; color: #eaeaea; padding: 12px; border-radius: 8px; overflow: auto; }
+        .muted { color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+<h1>자동차 번호판 스캔 테스트 페이지</h1>
+
+<div class="card">
+    <div class="row">
+        <label for="endpoint"><strong>Endpoint</strong></label>
+        <input id="endpoint" type="text" value="/scan" />
+        <span class="muted">기본: /scan (컨트롤러 @PostMapping("/scan"))</span>
+    </div>
+    <div style="height:8px"></div>
+    <div class="row">
+        <input id="file" type="file" name="image" accept="image/*" />
+        <button id="btnFetch">fetch로 전송</button>
+        <button id="btnForm">폼으로 전송(페이지 이동)</button>
+    </div>
+    <div style="height:8px"></div>
+    <img id="preview" alt="미리보기" />
+    <p class="muted">※ 필드명은 <code>image</code> 입니다. (@RequestParam("image") MultipartFile image)</p>
+</div>
+
+<div class="card">
+    <h2 style="font-size:1.1rem;">응답</h2>
+    <pre id="output">아직 요청을 보내지 않았습니다.</pre>
+</div>
+
+<form id="plainForm" method="post" enctype="multipart/form-data" style="display:none;">
+    <input type="file" name="image" />
+</form>
+
+<script>
+    const $file = document.getElementById('file');
+    const $preview = document.getElementById('preview');
+    const $endpoint = document.getElementById('endpoint');
+    const $output = document.getElementById('output');
+    const $btnFetch = document.getElementById('btnFetch');
+    const $btnForm = document.getElementById('btnForm');
+    const $plainForm = document.getElementById('plainForm');
+
+    // 이미지 미리보기
+    $file.addEventListener('change', () => {
+        const f = $file.files?.[0];
+        if (!f) { $preview.style.display = 'none'; $preview.src = ''; return; }
+        const url = URL.createObjectURL(f);
+        $preview.src = url;
+        $preview.style.display = 'block';
+    });
+
+    // fetch로 비동기 업로드
+    $btnFetch.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const f = $file.files?.[0];
+        if (!f) {
+            alert('이미지 파일을 선택하세요.');
+            return;
+        }
+        const endpoint = $endpoint.value?.trim() || '/scan';
+
+        const form = new FormData();
+        form.append('image', f); // @RequestParam("image")와 일치해야 함
+
+        $output.textContent = '요청 중...';
+
+        try {
+            const res = await fetch(endpoint, {
+                method: 'POST',
+                body: form,
+                // Content-Type은 자동으로 multipart/form-data; boundary=... 로 설정되므로 직접 지정하지 마세요.
+                // 동일 출처에서 테스트하면 credentials 설정 불필요.
+                // 다른 도메인으로 보낼 경우 CORS 및 인증 설정 필요.
+            });
+
+            const text = await res.text();
+            // JSON이면 pretty-print 시도
+            try {
+                const json = JSON.parse(text);
+                $output.textContent = `HTTP ${res.status}\n` + JSON.stringify(json, null, 2);
+            } catch {
+                $output.textContent = `HTTP ${res.status}\n` + text;
+            }
+        } catch (err) {
+            $output.textContent = '요청 실패: ' + (err?.message || err);
+        }
+    });
+
+    // 전통적인 폼 제출 (페이지 이동)
+    $btnForm.addEventListener('click', (e) => {
+        e.preventDefault();
+        const f = $file.files?.[0];
+        if (!f) { alert('이미지 파일을 선택하세요.'); return; }
+
+        // 숨겨진 form에 파일 복사해서 action 동적으로 설정
+        const dt = new DataTransfer();
+        dt.items.add(f);
+        $plainForm.querySelector('input[type="file"]').files = dt.files;
+
+        $plainForm.action = $endpoint.value?.trim() || '/scan';
+        $plainForm.submit();
+    });
+</script>
+
+<p class="muted">
+    팁: Spring Security에서 CSRF가 켜져 있다면 <code>/scan</code>을 CSRF 예외로 두거나, HTML을
+    Spring Boot 정적 리소스(동일 출처)로 서빙하세요.
+</p>
+</body>
+</html>

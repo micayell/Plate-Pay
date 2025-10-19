@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title>계좌 생성</title>
+  <link rel="stylesheet" th:href="@{/css/bank.css}"/>
+  <script th:src="@{/js/bank.js}"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="/banks/accounts">계좌 목록</a>
+    <a href="/banks/create">계좌 생성</a>
+    <button onclick="logout()">로그아웃</button>
+  </nav>
+</header>
+
+<main>
+  <h2>계좌 생성</h2>
+  <form method="post" action="/banks/create">
+    <button type="submit" class="btn">새 계좌 만들기</button>
+  </form>
+</main>
+</body>
+</html>

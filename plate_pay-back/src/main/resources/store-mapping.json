@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "properties": {
+      "storeUid": { "type": "long" },
+      "storeName": { "type": "text" },
+      "storeType": { "type": "keyword" },
+      "address": { "type": "text" },
+      "roadAddress": { "type": "text" },
+      "storePhoneNum": { "type": "keyword" },
+      "storeUrl": { "type": "keyword" },
+      "location": { "type": "geo_point" }
+    }
+  }
+}

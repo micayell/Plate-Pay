@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: plate_pay_kiosk-back
+
+platepay:
+  api:
+    url: https://j13c108.p.ssafy.io
+
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+platepay:
+  api:
+    url: https://j13c108.p.ssafy.io
+
+---
+

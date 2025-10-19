@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  paythrough-ai:
+    build: .
+    container_name: paythrough-ocr
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - RELOAD=false
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # YOLO 모델 캐시를 위한 볼륨 (선택사항)
+      - model_cache:/root/.cache/ultralytics
+      # 로그 저장용 볼륨 (선택사항)
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    
+    # 메모리 제한 (필요에 따라 조정)
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
+
+volumes:
+  model_cache:

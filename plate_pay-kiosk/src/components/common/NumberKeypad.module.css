@@ -1,0 +1,79 @@
+/* 키패드 전체 컨테이너 */
+.numberKeypad {
+  width: 100%;
+}
+
+/* 키패드 그리드 */
+.keypadGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* 모든 버튼의 공통 스타일 */
+.keypadButton,
+.keypadActionButton,
+.keypadSubmitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  font-size: 28px;
+  font-weight: 500;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+  background-color: #FFFFFF;
+  color: #1F2937;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* 비어있는 칸 (필요 시) */
+.keypadEmpty {
+  visibility: hidden;
+}
+
+/* 버튼 Hover 효과 */
+.keypadButton:hover,
+.keypadActionButton:hover,
+.keypadSubmitButton:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+}
+
+/* 버튼 Active 효과 (클릭 시) */
+.keypadButton:active,
+.keypadActionButton:active,
+.keypadSubmitButton:not(:disabled):active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  background-color: #F9FAFB;
+}
+
+/* 지우기(←) 버튼 */
+.keypadActionButton {
+  background-color: #F3F4F6;
+  font-size: 24px;
+}
+
+/* 입력 버튼 */
+.keypadSubmitButton {
+  background-color: #0064FF;
+  border-color: #0064FF;
+  color: white;
+}
+
+.keypadSubmitButton:not(:disabled):active {
+  background-color: #0052CC;
+}
+
+/* 입력 버튼 비활성화 상태 */
+.keypadSubmitButton:disabled {
+  background-color: #E5E7EB;
+  border-color: #E5E7EB;
+  color: #9CA3AF;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}

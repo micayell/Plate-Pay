@@ -1,0 +1,49 @@
+services:
+  plate-app:
+    build: .
+    container_name: plate-app-dev
+    depends_on:
+      - plate-elasticsearch
+    ports:
+      - "${SPRING_PORT}:8080"
+    env_file:
+      - .env
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    networks:
+      - backend
+
+  plate-elasticsearch:
+    image: jinno321/elasticsearch-nori:1.0
+    container_name: plate-elasticsearch-dev
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "${ELASTIC_PORT}:9200"
+      - "9300:9300"
+    volumes:
+      - es-data:/usr/share/elasticseardch/data
+    networks:
+      - backend
+
+  plate-kibana:
+    image: docker.elastic.co/kibana/kibana:8.14.1
+    container_name: plate-kibana-dev
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://plate-elasticsearch:9200
+    depends_on:
+      - plate-elasticsearch
+    networks:
+      - backend
+
+volumes:
+  es-data:
+  pg-data:
+
+networks:
+  backend:
+    driver: bridge

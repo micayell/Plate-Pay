@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>계좌 목록</title>
+    <link rel="stylesheet" th:href="@{/css/bank.css}"/>
+    <script th:src="@{/js/bank.js}"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <span th:text="${memberName + '님 환영합니다'}" style="color: white"></span>
+        <a href="/banks/accounts">계좌 목록</a>
+        <a href="/banks/create">계좌 생성</a>
+        <button onclick="logout()">로그아웃</button>
+    </nav>
+</header>
+
+<main>
+    <h2>내 계좌 목록</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>은행명</th>
+            <th>계좌번호</th>
+            <th>잔액</th>
+            <th>거래내역</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="acc : ${accounts}">
+            <td th:text="${acc.bankName}"></td>
+            <td th:text="${acc.accountNo}"></td>
+            <td th:text="${#numbers.formatInteger(acc.accountBalance, 3, 'COMMA')}"></td>
+            <td>
+                <a th:href="@{'/banks/histories/' + ${acc.accountNo}}" class="btn">조회</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>

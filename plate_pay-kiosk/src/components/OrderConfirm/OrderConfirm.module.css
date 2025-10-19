@@ -1,0 +1,116 @@
+/* OrderConfirm 컴포넌트 전용 스타일 */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 어두운 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.modalContent {
+  background: white;
+  border-radius: 24px; /* 더 둥글게 */
+  padding: 2rem 2.5rem;
+  width: 480px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* 자연스러운 그림자 */
+  animation: slideUp 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* 주문 목록 */
+.orderList {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.orderHeader, .orderRow { display: flex; padding: 0 1.5rem; }
+.orderHeader { background-color: #0064FF; color: white; height: 48px; align-items: center; font-weight: 600; }
+.orderRow { height: 52px; align-items: center; border-bottom: 1px solid #f0f0f0; }
+.orderRow:last-child { border-bottom: none; }
+.colName { flex: 5; text-align: left; }
+.colQty { flex: 2; text-align: center; }
+.colPrice { flex: 3; text-align: right; }
+
+.orderBody {
+  max-height: 156px; /* 3줄 높이 */
+  overflow-y: auto;
+  /* 커스텀 스크롤바 (웹킷) */
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #f7fafc;
+}
+.orderBody::-webkit-scrollbar { width: 8px; }
+.orderBody::-webkit-scrollbar-track { background: #f7fafc; }
+.orderBody::-webkit-scrollbar-thumb { background-color: #cbd5e0; border-radius: 10px; border: 2px solid #f7fafc; }
+
+
+/* 빈 장바구니 메시지 스타일 */
+.emptyOrder {
+  text-align: center;
+  color: #a0aec0;
+  padding: 3rem 0;
+}
+
+
+/* 중간 합계 */
+.summary {
+  font-size: 16px;
+  font-weight: 500;
+  color: #718096; /* 레이블을 연한 회색으로 */
+}
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.summaryRow span:last-child {
+  color: #1a202c;
+  font-weight: 600;
+}
+.summaryRow .discountValue {
+  color: #0064FF;
+}
+
+/* 최종 합계 */
+.total {
+  border-top: 2px solid #0064FF; /* 파란색 굵은 구분선 */
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+}
+.total .totalValue {
+  color: #e53e3e;
+  font-size: 22px;
+}
+
+/* 하단 버튼 */
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.actions button {
+  width: 135px;
+  height: 48px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.actions button:hover {
+  opacity: 0.9;
+}
+.backBtn { background-color: #e5e7eb; color: #4b5563; }
+.submitBtn { background-color: #0064FF; color: white; }

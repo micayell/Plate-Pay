@@ -1,0 +1,64 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                cleanWs()
+                git branch: 'BE',
+                    url: 'https://lab.ssafy.com/s13-fintech-finance-sub1/S13P21C108.git',
+                    credentialsId: 'gitlab_token_username_with_password'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                dir('plate_pay-back') {
+                    sh 'chmod +x ./gradlew'
+                    sh './gradlew clean --no-build-cache bootJar -x test'
+                }
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sshagent (credentials: ['ec2-ssh-key']) {
+                    withCredentials([
+                        file(credentialsId: 'env-prod', variable: 'ENV_FILE'),
+                        usernamePassword(credentialsId: 'dockerhub-cred',
+                                         usernameVariable: 'DOCKER_USER',
+                                         passwordVariable: 'DOCKER_PASS')
+                    ]) {
+                        sh '''
+                            echo "[INFO] Deploying artifact and config to EC2..."
+
+                            # EC2에 디렉토리 보장
+                            ssh -o StrictHostKeyChecking=no ubuntu@j13c108.p.ssafy.io "mkdir -p /home/ubuntu/S13P21C108/plate_pay-back"
+
+                            # jar 파일 전송 (항상 app.jar로)
+                            scp -o StrictHostKeyChecking=no plate_pay-back/build/libs/*SNAPSHOT.jar \
+                                ubuntu@j13c108.p.ssafy.io:/home/ubuntu/S13P21C108/plate_pay-back/app.jar
+
+                            # Dockerfile, docker-compose.prod.yml 전송
+                            scp -o StrictHostKeyChecking=no plate_pay-back/Dockerfile \
+                                ubuntu@j13c108.p.ssafy.io:/home/ubuntu/S13P21C108/plate_pay-back/Dockerfile
+                            scp -o StrictHostKeyChecking=no plate_pay-back/docker-compose.prod.yml \
+                                ubuntu@j13c108.p.ssafy.io:/home/ubuntu/S13P21C108/plate_pay-back/docker-compose.prod.yml
+
+                            # env.prod 파일도 EC2에 복사
+                            scp -o StrictHostKeyChecking=no $ENV_FILE \
+                                ubuntu@j13c108.p.ssafy.io:/home/ubuntu/S13P21C108/plate_pay-back/.env.prod
+
+                            # EC2에서 docker login 후 컨테이너 재배포
+                            ssh -o StrictHostKeyChecking=no ubuntu@j13c108.p.ssafy.io "
+                                echo ${DOCKER_PASS} | docker login -u ${DOCKER_USER} --password-stdin &&
+                                cd /home/ubuntu/S13P21C108/plate_pay-back &&
+                                docker compose -f docker-compose.prod.yml up -d --build --force-recreate
+                            "
+                        '''
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "modelTopology": {
+        "class_name": "YOLOv8",
+        "config": {
+            "input_shape": [640, 640, 3],
+            "num_classes": 80,
+            "anchors": [],
+            "model_type": "yolov8n"
+        }
+    },
+    "weightsManifest": [],
+    "format": "tfjs-layers",
+    "generatedBy": "TensorFlow.js tfjs-converter",
+    "convertedBy": "TensorFlow.js tfjs-converter"
+}

@@ -1,0 +1,67 @@
+spring:
+  application:
+    name: pcarchu-bank
+
+  #THYMELEAF
+  thymeleaf:
+    cache: false
+    check-template: true
+    check-template-location: true
+    enabled: true
+    encoding: UTF-8
+    mode: HTML
+    prefix: classpath:templates/
+    suffix: .html
+    template-resolver-order: 1
+
+  # oauth
+  security:
+    oauth2:
+      client:
+        provider:
+          kakao:
+            authorization-uri: https://kauth.kakao.com/oauth/authorize
+            token-uri: https://kauth.kakao.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user-name-attribute: id
+          ssafy:
+            authorization-uri: https://project.ssafy.com/oauth/sso-check
+            token-uri: https://project.ssafy.com/ssafy/oauth2/token
+            user-info-uri: https://project.ssafy.com/ssafy/resources/userInfo
+            user-name-attribute: userId
+        registration:
+          kakao:
+            client-id: ${KAKAO_CLIENT_ID}
+            client-secret: ${KAKAO_CLIENT_SECRET}
+            client-authentication-method: client_secret_post
+            redirect-uri: ${OAUTH_REDIRECT_HOST}:8080/login/oauth2/code/kakao
+            authorization-grant-type: authorization_code
+            client-name: kakao
+            scope:
+              - profile_nickname
+              - profile_image
+              - account_email
+          ssafy:
+            provider: ssafy
+            client-id: ${SSAFY_CLIENT_ID}
+            client-secret: ${SSAFY_CLIENT_SECRET}
+            authorization-grant-type: authorization_code
+            client-authentication-method: client_secret_post
+            redirect-uri: ${OAUTH_REDIRECT_HOST}:8080/login/oauth2/code/ssafy
+            scope: [ ]
+
+# JWT
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 1296000000
+
+server.port: 8080
+
+ssafy:
+  api:
+    key: ${SSAFY_FINANCIAL_KEY}
+    url: https://finopenapi.ssafy.io
+
+platepay:
+  api:
+    url: https://j13c108.p.ssafy.io
