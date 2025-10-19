@@ -1,0 +1,8 @@
+{
+  "react-native": {
+    "android_task": "app:assembleDebug",
+    "ios_task": "ios:build",
+    "messaging_android_notification_channel_id": "platepay_channel",
+    "messaging_ios_notification_channel_id": "platepay_channel"
+  }
+}

@@ -1,0 +1,70 @@
+version: "3.8"
+
+services:
+  plate-app:
+    build: .
+    container_name: plate-app
+    ports:
+      - "${SPRING_PORT}:8080"
+    env_file:
+      - .env.prod
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      JAVA_TOOL_OPTIONS: -Djava.net.preferIPv4Stack=true
+    volumes:
+      - ./app.jar:/app/app.jar        # 빌드된 JAR만 마운트
+    depends_on:
+      plate-elasticsearch:
+        condition: service_healthy
+    networks:
+      - backend
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8080/actuator/health | grep -q '\"status\":\"UP\"'"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  plate-elasticsearch:
+    image: jinno321/elasticsearch-nori:1.0
+    container_name: plate-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "${ELASTIC_PORT}:9200"
+      - "9300:9300"
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9200 > /dev/null || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+    restart: always
+
+  plate-kibana:
+    image: docker.elastic.co/kibana/kibana:8.14.1
+    container_name: plate-kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://plate-elasticsearch:9200
+    depends_on:
+      plate-elasticsearch:
+        condition: service_healthy
+    networks:
+      - backend
+    restart: always
+
+volumes:
+  es-data:
+
+networks:
+  backend:
+    driver: bridge

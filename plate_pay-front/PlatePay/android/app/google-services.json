@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "259450942211",
+    "project_id": "plate-pay",
+    "storage_bucket": "plate-pay.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259450942211:android:c5b161015a3c511ffcaf36",
+        "android_client_info": {
+          "package_name": "com.platepay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9dv_yNz89h6GjkBQ6EcaOBk_9ehY1k_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

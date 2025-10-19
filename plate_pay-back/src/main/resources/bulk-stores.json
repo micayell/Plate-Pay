@@ -1,0 +1,200 @@
+{"index": {"_index": "store", "_id": "1"}}
+{"storeUid": 1, "storeName": "삼겹살명가 금남로점", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 봉선동 194번지", "roadAddress": "광주 봉선동로 4번길", "storePhoneNum": "062-1001", "storeUrl": "https://img.store1.jpg", "location": {"lat": 35.101, "lon": 126.801}}
+{"index": {"_index": "store", "_id": "2"}}
+{"storeUid": 2, "storeName": "스토어24 중앙로점", "storeType": "CONVENIENCE_STORE", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 운암동 64번지", "roadAddress": "광주 운암동로 19번길", "storePhoneNum": "062-1002", "storeUrl": "https://img.store2.jpg", "location": {"lat": 35.102, "lon": 126.802}}
+{"index": {"_index": "store", "_id": "3"}}
+{"storeUid": 3, "storeName": "타임월드몰", "storeType": "SHOPPING_MALL", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 두암동 194번지", "roadAddress": "광주 두암동로 45번길", "storePhoneNum": "062-1003", "storeUrl": "https://img.store3.jpg", "location": {"lat": 35.103, "lon": 126.803}}
+{"index": {"_index": "store", "_id": "4"}}
+{"storeUid": 4, "storeName": "메가박스 금남로점", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 금남로 165번지", "roadAddress": "광주 금남로로 17번길", "storePhoneNum": "062-1004", "storeUrl": "https://img.store4.jpg", "location": {"lat": 35.104, "lon": 126.804}}
+{"index": {"_index": "store", "_id": "5"}}
+{"storeUid": 5, "storeName": "써브웨이 충장로점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 두암동 149번지", "roadAddress": "광주 두암동로 28번길", "storePhoneNum": "062-1005", "storeUrl": "https://img.store5.jpg", "location": {"lat": 35.105, "lon": 126.805}}
+{"index": {"_index": "store", "_id": "6"}}
+{"storeUid": 6, "storeName": "광주맛집 금남로점", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 운암동 170번지", "roadAddress": "광주 운암동로 1번길", "storePhoneNum": "062-1006", "storeUrl": "https://img.store6.jpg", "location": {"lat": 35.106, "lon": 126.806}}
+{"index": {"_index": "store", "_id": "7"}}
+{"storeUid": 7, "storeName": "빛고을마트 광천점", "storeType": "MART", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 운암동 165번지", "roadAddress": "광주 운암동로 20번길", "storePhoneNum": "062-1007", "storeUrl": "https://img.store7.jpg", "location": {"lat": 35.107, "lon": 126.807}}
+{"index": {"_index": "store", "_id": "8"}}
+{"storeUid": 8, "storeName": "삼겹살명가", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 충장로 151번지", "roadAddress": "광주 충장로로 39번길", "storePhoneNum": "062-1008", "storeUrl": "https://img.store8.jpg", "location": {"lat": 35.108, "lon": 126.808}}
+{"index": {"_index": "store", "_id": "9"}}
+{"storeUid": 9, "storeName": "시청주차장 금남로점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 금남로 187번지", "roadAddress": "광주 금남로로 17번길", "storePhoneNum": "062-1009", "storeUrl": "https://img.store9.jpg", "location": {"lat": 35.109, "lon": 126.809}}
+{"index": {"_index": "store", "_id": "10"}}
+{"storeUid": 10, "storeName": "써브웨이", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 금남로 115번지", "roadAddress": "광주 금남로로 17번길", "storePhoneNum": "062-1010", "storeUrl": "https://img.store10.jpg", "location": {"lat": 35.11, "lon": 126.81}}
+{"index": {"_index": "store", "_id": "11"}}
+{"storeUid": 11, "storeName": "백반정식집 중앙로점", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 충장로 67번지", "roadAddress": "광주 충장로로 13번길", "storePhoneNum": "062-1011", "storeUrl": "https://img.store11.jpg", "location": {"lat": 35.111, "lon": 126.811}}
+{"index": {"_index": "store", "_id": "12"}}
+{"storeUid": 12, "storeName": "한식마을 금남로점", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 봉선동 126번지", "roadAddress": "광주 봉선동로 2번길", "storePhoneNum": "062-1012", "storeUrl": "https://img.store12.jpg", "location": {"lat": 35.112, "lon": 126.812}}
+{"index": {"_index": "store", "_id": "13"}}
+{"storeUid": 13, "storeName": "시청주차장 광천점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 운암동 81번지", "roadAddress": "광주 운암동로 48번길", "storePhoneNum": "062-1013", "storeUrl": "https://img.store13.jpg", "location": {"lat": 35.113, "lon": 126.813}}
+{"index": {"_index": "store", "_id": "14"}}
+{"storeUid": 14, "storeName": "KFC", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 금남로 151번지", "roadAddress": "광주 금남로로 41번길", "storePhoneNum": "062-1014", "storeUrl": "https://img.store14.jpg", "location": {"lat": 35.114, "lon": 126.814}}
+{"index": {"_index": "store", "_id": "15"}}
+{"storeUid": 15, "storeName": "기타매장C 광천점", "storeType": "OTHER", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 화정동 156번지", "roadAddress": "광주 화정동로 42번길", "storePhoneNum": "062-1015", "storeUrl": "https://img.store15.jpg", "location": {"lat": 35.115, "lon": 126.815}}
+{"index": {"_index": "store", "_id": "16"}}
+{"storeUid": 16, "storeName": "롯데리아 중앙로점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 광천동 100번지", "roadAddress": "광주 광천동로 38번길", "storePhoneNum": "062-1016", "storeUrl": "https://img.store16.jpg", "location": {"lat": 35.116, "lon": 126.816}}
+{"index": {"_index": "store", "_id": "17"}}
+{"storeUid": 17, "storeName": "필름시네마 광천점", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 봉선동 117번지", "roadAddress": "광주 봉선동로 14번길", "storePhoneNum": "062-1017", "storeUrl": "https://img.store17.jpg", "location": {"lat": 35.117, "lon": 126.817}}
+{"index": {"_index": "store", "_id": "18"}}
+{"storeUid": 18, "storeName": "써브웨이 충장로점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 봉선동 127번지", "roadAddress": "광주 봉선동로 13번길", "storePhoneNum": "062-1018", "storeUrl": "https://img.store18.jpg", "location": {"lat": 35.118, "lon": 126.818}}
+{"index": {"_index": "store", "_id": "19"}}
+{"storeUid": 19, "storeName": "써브웨이 충장로점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 두암동 117번지", "roadAddress": "광주 두암동로 9번길", "storePhoneNum": "062-1019", "storeUrl": "https://img.store19.jpg", "location": {"lat": 35.119, "lon": 126.819}}
+{"index": {"_index": "store", "_id": "20"}}
+{"storeUid": 20, "storeName": "CGV 금남로점", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 광천동 128번지", "roadAddress": "광주 광천동로 47번길", "storePhoneNum": "062-1020", "storeUrl": "https://img.store20.jpg", "location": {"lat": 35.12, "lon": 126.82}}
+{"index": {"_index": "store", "_id": "21"}}
+{"storeUid": 21, "storeName": "메가박스", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 양림동 48번지", "roadAddress": "광주 양림동로 14번길", "storePhoneNum": "062-1021", "storeUrl": "https://img.store21.jpg", "location": {"lat": 35.121, "lon": 126.821}}
+{"index": {"_index": "store", "_id": "22"}}
+{"storeUid": 22, "storeName": "큰손마트 광천점", "storeType": "MART", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 두암동 114번지", "roadAddress": "광주 두암동로 31번길", "storePhoneNum": "062-1022", "storeUrl": "https://img.store22.jpg", "location": {"lat": 35.122, "lon": 126.822}}
+{"index": {"_index": "store", "_id": "23"}}
+{"storeUid": 23, "storeName": "스타일샵 금남로점", "storeType": "BEAUTY", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 화정동 99번지", "roadAddress": "광주 화정동로 23번길", "storePhoneNum": "062-1023", "storeUrl": "https://img.store23.jpg", "location": {"lat": 35.123, "lon": 126.823}}
+{"index": {"_index": "store", "_id": "24"}}
+{"storeUid": 24, "storeName": "시청주차장 중앙로점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 금남로 127번지", "roadAddress": "광주 금남로로 7번길", "storePhoneNum": "062-1024", "storeUrl": "https://img.store24.jpg", "location": {"lat": 35.124, "lon": 126.824}}
+{"index": {"_index": "store", "_id": "25"}}
+{"storeUid": 25, "storeName": "소소한커피 충장로점", "storeType": "CAFE", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 운암동 157번지", "roadAddress": "광주 운암동로 3번길", "storePhoneNum": "062-1025", "storeUrl": "https://img.store25.jpg", "location": {"lat": 35.125, "lon": 126.825}}
+{"index": {"_index": "store", "_id": "26"}}
+{"storeUid": 26, "storeName": "청년다방 중앙로점", "storeType": "CAFE", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 운암동 186번지", "roadAddress": "광주 운암동로 33번길", "storePhoneNum": "062-1026", "storeUrl": "https://img.store26.jpg", "location": {"lat": 35.126, "lon": 126.826}}
+{"index": {"_index": "store", "_id": "27"}}
+{"storeUid": 27, "storeName": "롯데아울렛 충장로점", "storeType": "SHOPPING_MALL", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 광천동 84번지", "roadAddress": "광주 광천동로 43번길", "storePhoneNum": "062-1027", "storeUrl": "https://img.store27.jpg", "location": {"lat": 35.127, "lon": 126.827}}
+{"index": {"_index": "store", "_id": "28"}}
+{"storeUid": 28, "storeName": "행복마트 중앙로점", "storeType": "MART", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 봉선동 120번지", "roadAddress": "광주 봉선동로 28번길", "storePhoneNum": "062-1028", "storeUrl": "https://img.store28.jpg", "location": {"lat": 35.128, "lon": 126.828}}
+{"index": {"_index": "store", "_id": "29"}}
+{"storeUid": 29, "storeName": "백반정식집 중앙로점", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 충장로 150번지", "roadAddress": "광주 충장로로 11번길", "storePhoneNum": "062-1029", "storeUrl": "https://img.store29.jpg", "location": {"lat": 35.129, "lon": 126.829}}
+{"index": {"_index": "store", "_id": "30"}}
+{"storeUid": 30, "storeName": "기타매장E 충장로점", "storeType": "OTHER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 화정동 109번지", "roadAddress": "광주 화정동로 30번길", "storePhoneNum": "062-1030", "storeUrl": "https://img.store30.jpg", "location": {"lat": 35.13, "lon": 126.83}}
+{"index": {"_index": "store", "_id": "31"}}
+{"storeUid": 31, "storeName": "행복마트 중앙로점", "storeType": "MART", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 금남로 45번지", "roadAddress": "광주 금남로로 33번길", "storePhoneNum": "062-1031", "storeUrl": "https://img.store31.jpg", "location": {"lat": 35.131, "lon": 126.831}}
+{"index": {"_index": "store", "_id": "32"}}
+{"storeUid": 32, "storeName": "구시청주차장 금남로점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 두암동 34번지", "roadAddress": "광주 두암동로 39번길", "storePhoneNum": "062-1032", "storeUrl": "https://img.store32.jpg", "location": {"lat": 35.132, "lon": 126.832}}
+{"index": {"_index": "store", "_id": "33"}}
+{"storeUid": 33, "storeName": "메가박스 중앙로점", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 화정동 193번지", "roadAddress": "광주 화정동로 13번길", "storePhoneNum": "062-1033", "storeUrl": "https://img.store33.jpg", "location": {"lat": 35.133, "lon": 126.833}}
+{"index": {"_index": "store", "_id": "34"}}
+{"storeUid": 34, "storeName": "광주의원 금남로점", "storeType": "HOSPITAL", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 충장로 39번지", "roadAddress": "광주 충장로로 5번길", "storePhoneNum": "062-1034", "storeUrl": "https://img.store34.jpg", "location": {"lat": 35.134, "lon": 126.834}}
+{"index": {"_index": "store", "_id": "35"}}
+{"storeUid": 35, "storeName": "광주의원 광천점", "storeType": "HOSPITAL", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 충장로 192번지", "roadAddress": "광주 충장로로 8번길", "storePhoneNum": "062-1035", "storeUrl": "https://img.store35.jpg", "location": {"lat": 35.135, "lon": 126.835}}
+{"index": {"_index": "store", "_id": "36"}}
+{"storeUid": 36, "storeName": "서울정형외과", "storeType": "HOSPITAL", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 광천동 83번지", "roadAddress": "광주 광천동로 32번길", "storePhoneNum": "062-1036", "storeUrl": "https://img.store36.jpg", "location": {"lat": 35.136, "lon": 126.836}}
+{"index": {"_index": "store", "_id": "37"}}
+{"storeUid": 37, "storeName": "맥도날드 금남로점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 화정동 178번지", "roadAddress": "광주 화정동로 17번길", "storePhoneNum": "062-1037", "storeUrl": "https://img.store37.jpg", "location": {"lat": 35.137, "lon": 126.837}}
+{"index": {"_index": "store", "_id": "38"}}
+{"storeUid": 38, "storeName": "NC백화점", "storeType": "SHOPPING_MALL", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 두암동 28번지", "roadAddress": "광주 두암동로 14번길", "storePhoneNum": "062-1038", "storeUrl": "https://img.store38.jpg", "location": {"lat": 35.138, "lon": 126.838}}
+{"index": {"_index": "store", "_id": "39"}}
+{"storeUid": 39, "storeName": "KFC 광천점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 양림동 186번지", "roadAddress": "광주 양림동로 2번길", "storePhoneNum": "062-1039", "storeUrl": "https://img.store39.jpg", "location": {"lat": 35.139, "lon": 126.839}}
+{"index": {"_index": "store", "_id": "40"}}
+{"storeUid": 40, "storeName": "기타매장C 광천점", "storeType": "OTHER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 두암동 161번지", "roadAddress": "광주 두암동로 15번길", "storePhoneNum": "062-1040", "storeUrl": "https://img.store40.jpg", "location": {"lat": 35.14, "lon": 126.84}}
+{"index": {"_index": "store", "_id": "41"}}
+{"storeUid": 41, "storeName": "소소한커피 광천점", "storeType": "CAFE", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 화정동 170번지", "roadAddress": "광주 화정동로 23번길", "storePhoneNum": "062-1041", "storeUrl": "https://img.store41.jpg", "location": {"lat": 35.141, "lon": 126.841}}
+{"index": {"_index": "store", "_id": "42"}}
+{"storeUid": 42, "storeName": "CGV 광천점", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 광천동 133번지", "roadAddress": "광주 광천동로 8번길", "storePhoneNum": "062-1042", "storeUrl": "https://img.store42.jpg", "location": {"lat": 35.142, "lon": 126.842}}
+{"index": {"_index": "store", "_id": "43"}}
+{"storeUid": 43, "storeName": "동네마트", "storeType": "MART", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 운암동 142번지", "roadAddress": "광주 운암동로 44번길", "storePhoneNum": "062-1043", "storeUrl": "https://img.store43.jpg", "location": {"lat": 35.143, "lon": 126.843}}
+{"index": {"_index": "store", "_id": "44"}}
+{"storeUid": 44, "storeName": "롯데아울렛 금남로점", "storeType": "SHOPPING_MALL", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 금남로 116번지", "roadAddress": "광주 금남로로 24번길", "storePhoneNum": "062-1044", "storeUrl": "https://img.store44.jpg", "location": {"lat": 35.144, "lon": 126.844}}
+{"index": {"_index": "store", "_id": "45"}}
+{"storeUid": 45, "storeName": "백반정식집", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 봉선동 107번지", "roadAddress": "광주 봉선동로 10번길", "storePhoneNum": "062-1045", "storeUrl": "https://img.store45.jpg", "location": {"lat": 35.145, "lon": 126.845}}
+{"index": {"_index": "store", "_id": "46"}}
+{"storeUid": 46, "storeName": "뷰티살롱", "storeType": "BEAUTY", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 봉선동 199번지", "roadAddress": "광주 봉선동로 40번길", "storePhoneNum": "062-1046", "storeUrl": "https://img.store46.jpg", "location": {"lat": 35.146, "lon": 126.846}}
+{"index": {"_index": "store", "_id": "47"}}
+{"storeUid": 47, "storeName": "구시청주차장 중앙로점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 금남로 93번지", "roadAddress": "광주 금남로로 42번길", "storePhoneNum": "062-1047", "storeUrl": "https://img.store47.jpg", "location": {"lat": 35.147, "lon": 126.847}}
+{"index": {"_index": "store", "_id": "48"}}
+{"storeUid": 48, "storeName": "광주의원 중앙로점", "storeType": "HOSPITAL", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 양림동 48번지", "roadAddress": "광주 양림동로 10번길", "storePhoneNum": "062-1048", "storeUrl": "https://img.store48.jpg", "location": {"lat": 35.148, "lon": 126.848}}
+{"index": {"_index": "store", "_id": "49"}}
+{"storeUid": 49, "storeName": "기타매장B 중앙로점", "storeType": "OTHER", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 양림동 189번지", "roadAddress": "광주 양림동로 43번길", "storePhoneNum": "062-1049", "storeUrl": "https://img.store49.jpg", "location": {"lat": 35.149, "lon": 126.849}}
+{"index": {"_index": "store", "_id": "50"}}
+{"storeUid": 50, "storeName": "뚜레쥬르 충장로점", "storeType": "BAKERY", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 충장로 46번지", "roadAddress": "광주 충장로로 23번길", "storePhoneNum": "062-1050", "storeUrl": "https://img.store50.jpg", "location": {"lat": 35.15, "lon": 126.85}}
+{"index": {"_index": "store", "_id": "51"}}
+{"storeUid": 51, "storeName": "시청주차장 충장로점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 충장로 150번지", "roadAddress": "광주 충장로로 18번길", "storePhoneNum": "062-1051", "storeUrl": "https://img.store51.jpg", "location": {"lat": 35.151, "lon": 126.851}}
+{"index": {"_index": "store", "_id": "52"}}
+{"storeUid": 52, "storeName": "소소한커피 금남로점", "storeType": "CAFE", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 금남로 62번지", "roadAddress": "광주 금남로로 10번길", "storePhoneNum": "062-1052", "storeUrl": "https://img.store52.jpg", "location": {"lat": 35.152, "lon": 126.852}}
+{"index": {"_index": "store", "_id": "53"}}
+{"storeUid": 53, "storeName": "푸른마트 충장로점", "storeType": "MART", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 양림동 86번지", "roadAddress": "광주 양림동로 48번길", "storePhoneNum": "062-1053", "storeUrl": "https://img.store53.jpg", "location": {"lat": 35.153, "lon": 126.853}}
+{"index": {"_index": "store", "_id": "54"}}
+{"storeUid": 54, "storeName": "맥도날드 중앙로점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 운암동 162번지", "roadAddress": "광주 운암동로 2번길", "storePhoneNum": "062-1054", "storeUrl": "https://img.store54.jpg", "location": {"lat": 35.154, "lon": 126.854}}
+{"index": {"_index": "store", "_id": "55"}}
+{"storeUid": 55, "storeName": "중앙내과 충장로점", "storeType": "HOSPITAL", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 양림동 45번지", "roadAddress": "광주 양림동로 29번길", "storePhoneNum": "062-1055", "storeUrl": "https://img.store55.jpg", "location": {"lat": 35.155, "lon": 126.855}}
+{"index": {"_index": "store", "_id": "56"}}
+{"storeUid": 56, "storeName": "충장로주차장 광천점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 운암동 199번지", "roadAddress": "광주 운암동로 5번길", "storePhoneNum": "062-1056", "storeUrl": "https://img.store56.jpg", "location": {"lat": 35.156, "lon": 126.856}}
+{"index": {"_index": "store", "_id": "57"}}
+{"storeUid": 57, "storeName": "타임월드몰 금남로점", "storeType": "SHOPPING_MALL", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 금남로 129번지", "roadAddress": "광주 금남로로 42번길", "storePhoneNum": "062-1057", "storeUrl": "https://img.store57.jpg", "location": {"lat": 35.157, "lon": 126.857}}
+{"index": {"_index": "store", "_id": "58"}}
+{"storeUid": 58, "storeName": "청년다방 중앙로점", "storeType": "CAFE", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 두암동 62번지", "roadAddress": "광주 두암동로 23번길", "storePhoneNum": "062-1058", "storeUrl": "https://img.store58.jpg", "location": {"lat": 35.158, "lon": 126.858}}
+{"index": {"_index": "store", "_id": "59"}}
+{"storeUid": 59, "storeName": "냉면한그릇", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 두암동 178번지", "roadAddress": "광주 두암동로 8번길", "storePhoneNum": "062-1059", "storeUrl": "https://img.store59.jpg", "location": {"lat": 35.159, "lon": 126.859}}
+{"index": {"_index": "store", "_id": "60"}}
+{"storeUid": 60, "storeName": "스킨케어룸 광천점", "storeType": "BEAUTY", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 운암동 198번지", "roadAddress": "광주 운암동로 36번길", "storePhoneNum": "062-1060", "storeUrl": "https://img.store60.jpg", "location": {"lat": 35.16, "lon": 126.86}}
+{"index": {"_index": "store", "_id": "61"}}
+{"storeUid": 61, "storeName": "백반정식집 중앙로점", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 광천동 141번지", "roadAddress": "광주 광천동로 46번길", "storePhoneNum": "062-1061", "storeUrl": "https://img.store61.jpg", "location": {"lat": 35.161, "lon": 126.861}}
+{"index": {"_index": "store", "_id": "62"}}
+{"storeUid": 62, "storeName": "버거킹 금남로점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 광천동 75번지", "roadAddress": "광주 광천동로 6번길", "storePhoneNum": "062-1062", "storeUrl": "https://img.store62.jpg", "location": {"lat": 35.162, "lon": 126.862}}
+{"index": {"_index": "store", "_id": "63"}}
+{"storeUid": 63, "storeName": "필름시네마", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 운암동 147번지", "roadAddress": "광주 운암동로 16번길", "storePhoneNum": "062-1063", "storeUrl": "https://img.store63.jpg", "location": {"lat": 35.163, "lon": 126.863}}
+{"index": {"_index": "store", "_id": "64"}}
+{"storeUid": 64, "storeName": "뷰티살롱 광천점", "storeType": "BEAUTY", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 봉선동 173번지", "roadAddress": "광주 봉선동로 35번길", "storePhoneNum": "062-1064", "storeUrl": "https://img.store64.jpg", "location": {"lat": 35.164, "lon": 126.864}}
+{"index": {"_index": "store", "_id": "65"}}
+{"storeUid": 65, "storeName": "CU 광천점", "storeType": "CONVENIENCE_STORE", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 두암동 146번지", "roadAddress": "광주 두암동로 32번길", "storePhoneNum": "062-1065", "storeUrl": "https://img.store65.jpg", "location": {"lat": 35.165, "lon": 126.865}}
+{"index": {"_index": "store", "_id": "66"}}
+{"storeUid": 66, "storeName": "푸른마트", "storeType": "MART", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 양림동 32번지", "roadAddress": "광주 양림동로 49번길", "storePhoneNum": "062-1066", "storeUrl": "https://img.store66.jpg", "location": {"lat": 35.166, "lon": 126.866}}
+{"index": {"_index": "store", "_id": "67"}}
+{"storeUid": 67, "storeName": "버거킹 금남로점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 화정동 160번지", "roadAddress": "광주 화정동로 47번길", "storePhoneNum": "062-1067", "storeUrl": "https://img.store67.jpg", "location": {"lat": 35.167, "lon": 126.867}}
+{"index": {"_index": "store", "_id": "68"}}
+{"storeUid": 68, "storeName": "뚜레쥬르", "storeType": "BAKERY", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 두암동 10번지", "roadAddress": "광주 두암동로 5번길", "storePhoneNum": "062-1068", "storeUrl": "https://img.store68.jpg", "location": {"lat": 35.168, "lon": 126.868}}
+{"index": {"_index": "store", "_id": "69"}}
+{"storeUid": 69, "storeName": "롯데시네마", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 광천동 176번지", "roadAddress": "광주 광천동로 30번길", "storePhoneNum": "062-1069", "storeUrl": "https://img.store69.jpg", "location": {"lat": 35.169, "lon": 126.869}}
+{"index": {"_index": "store", "_id": "70"}}
+{"storeUid": 70, "storeName": "광주의원 중앙로점", "storeType": "HOSPITAL", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 광천동 108번지", "roadAddress": "광주 광천동로 8번길", "storePhoneNum": "062-1070", "storeUrl": "https://img.store70.jpg", "location": {"lat": 35.17, "lon": 126.87}}
+{"index": {"_index": "store", "_id": "71"}}
+{"storeUid": 71, "storeName": "이마트24 금남로점", "storeType": "CONVENIENCE_STORE", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 두암동 4번지", "roadAddress": "광주 두암동로 3번길", "storePhoneNum": "062-1071", "storeUrl": "https://img.store71.jpg", "location": {"lat": 35.171, "lon": 126.871}}
+{"index": {"_index": "store", "_id": "72"}}
+{"storeUid": 72, "storeName": "NC백화점 금남로점", "storeType": "SHOPPING_MALL", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 금남로 30번지", "roadAddress": "광주 금남로로 39번길", "storePhoneNum": "062-1072", "storeUrl": "https://img.store72.jpg", "location": {"lat": 35.172, "lon": 126.872}}
+{"index": {"_index": "store", "_id": "73"}}
+{"storeUid": 73, "storeName": "스타일샵 충장로점", "storeType": "BEAUTY", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 운암동 11번지", "roadAddress": "광주 운암동로 26번길", "storePhoneNum": "062-1073", "storeUrl": "https://img.store73.jpg", "location": {"lat": 35.173, "lon": 126.873}}
+{"index": {"_index": "store", "_id": "74"}}
+{"storeUid": 74, "storeName": "기타매장A", "storeType": "OTHER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 봉선동 31번지", "roadAddress": "광주 봉선동로 39번길", "storePhoneNum": "062-1074", "storeUrl": "https://img.store74.jpg", "location": {"lat": 35.174, "lon": 126.874}}
+{"index": {"_index": "store", "_id": "75"}}
+{"storeUid": 75, "storeName": "광주의원", "storeType": "HOSPITAL", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 봉선동 175번지", "roadAddress": "광주 봉선동로 42번길", "storePhoneNum": "062-1075", "storeUrl": "https://img.store75.jpg", "location": {"lat": 35.175, "lon": 126.875}}
+{"index": {"_index": "store", "_id": "76"}}
+{"storeUid": 76, "storeName": "GS25 중앙로점", "storeType": "CONVENIENCE_STORE", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 운암동 58번지", "roadAddress": "광주 운암동로 4번길", "storePhoneNum": "062-1076", "storeUrl": "https://img.store76.jpg", "location": {"lat": 35.176, "lon": 126.876}}
+{"index": {"_index": "store", "_id": "77"}}
+{"storeUid": 77, "storeName": "한식마을 광천점", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 충장로 1번지", "roadAddress": "광주 충장로로 38번길", "storePhoneNum": "062-1077", "storeUrl": "https://img.store77.jpg", "location": {"lat": 35.177, "lon": 126.877}}
+{"index": {"_index": "store", "_id": "78"}}
+{"storeUid": 78, "storeName": "광천터미널주차장 충장로점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 봉선동 141번지", "roadAddress": "광주 봉선동로 43번길", "storePhoneNum": "062-1078", "storeUrl": "https://img.store78.jpg", "location": {"lat": 35.178, "lon": 126.878}}
+{"index": {"_index": "store", "_id": "79"}}
+{"storeUid": 79, "storeName": "광천터미널주차장 광천점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 남구 봉선동 118번지", "roadAddress": "광주 봉선동로 33번길", "storePhoneNum": "062-1079", "storeUrl": "https://img.store79.jpg", "location": {"lat": 35.179, "lon": 126.879}}
+{"index": {"_index": "store", "_id": "80"}}
+{"storeUid": 80, "storeName": "메가박스", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 봉선동 128번지", "roadAddress": "광주 봉선동로 39번길", "storePhoneNum": "062-1080", "storeUrl": "https://img.store80.jpg", "location": {"lat": 35.18, "lon": 126.88}}
+{"index": {"_index": "store", "_id": "81"}}
+{"storeUid": 81, "storeName": "푸른마트 광천점", "storeType": "MART", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 운암동 77번지", "roadAddress": "광주 운암동로 45번길", "storePhoneNum": "062-1081", "storeUrl": "https://img.store81.jpg", "location": {"lat": 35.181, "lon": 126.881}}
+{"index": {"_index": "store", "_id": "82"}}
+{"storeUid": 82, "storeName": "롯데시네마 중앙로점", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 광천동 29번지", "roadAddress": "광주 광천동로 24번길", "storePhoneNum": "062-1082", "storeUrl": "https://img.store82.jpg", "location": {"lat": 35.182, "lon": 126.882}}
+{"index": {"_index": "store", "_id": "83"}}
+{"storeUid": 83, "storeName": "기타매장D 충장로점", "storeType": "OTHER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 금남로 48번지", "roadAddress": "광주 금남로로 23번길", "storePhoneNum": "062-1083", "storeUrl": "https://img.store83.jpg", "location": {"lat": 35.183, "lon": 126.883}}
+{"index": {"_index": "store", "_id": "84"}}
+{"storeUid": 84, "storeName": "GS25 광천점", "storeType": "CONVENIENCE_STORE", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 화정동 69번지", "roadAddress": "광주 화정동로 40번길", "storePhoneNum": "062-1084", "storeUrl": "https://img.store84.jpg", "location": {"lat": 35.184, "lon": 126.884}}
+{"index": {"_index": "store", "_id": "85"}}
+{"storeUid": 85, "storeName": "롯데아울렛 광천점", "storeType": "SHOPPING_MALL", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 양림동 197번지", "roadAddress": "광주 양림동로 1번길", "storePhoneNum": "062-1085", "storeUrl": "https://img.store85.jpg", "location": {"lat": 35.185, "lon": 126.885}}
+{"index": {"_index": "store", "_id": "86"}}
+{"storeUid": 86, "storeName": "스토어24 중앙로점", "storeType": "CONVENIENCE_STORE", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 충장로 152번지", "roadAddress": "광주 충장로로 36번길", "storePhoneNum": "062-1086", "storeUrl": "https://img.store86.jpg", "location": {"lat": 35.186, "lon": 126.886}}
+{"index": {"_index": "store", "_id": "87"}}
+{"storeUid": 87, "storeName": "NC백화점 중앙로점", "storeType": "SHOPPING_MALL", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 봉선동 29번지", "roadAddress": "광주 봉선동로 3번길", "storePhoneNum": "062-1087", "storeUrl": "https://img.store87.jpg", "location": {"lat": 35.187, "lon": 126.887}}
+{"index": {"_index": "store", "_id": "88"}}
+{"storeUid": 88, "storeName": "기타매장E 충장로점", "storeType": "OTHER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 광천동 67번지", "roadAddress": "광주 광천동로 21번길", "storePhoneNum": "062-1088", "storeUrl": "https://img.store88.jpg", "location": {"lat": 35.188, "lon": 126.888}}
+{"index": {"_index": "store", "_id": "89"}}
+{"storeUid": 89, "storeName": "맥도날드 광천점", "storeType": "FASTFOOD", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 두암동 87번지", "roadAddress": "광주 두암동로 32번길", "storePhoneNum": "062-1089", "storeUrl": "https://img.store89.jpg", "location": {"lat": 35.189, "lon": 126.889}}
+{"index": {"_index": "store", "_id": "90"}}
+{"storeUid": 90, "storeName": "구시청주차장 중앙로점", "storeType": "PARKING", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 운암동 130번지", "roadAddress": "광주 운암동로 9번길", "storePhoneNum": "062-1090", "storeUrl": "https://img.store90.jpg", "location": {"lat": 35.19, "lon": 126.89}}
+{"index": {"_index": "store", "_id": "91"}}
+{"storeUid": 91, "storeName": "기타매장E 중앙로점", "storeType": "OTHER", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 화정동 16번지", "roadAddress": "광주 화정동로 18번길", "storePhoneNum": "062-1091", "storeUrl": "https://img.store91.jpg", "location": {"lat": 35.191, "lon": 126.891}}
+{"index": {"_index": "store", "_id": "92"}}
+{"storeUid": 92, "storeName": "큰손마트 광천점", "storeType": "MART", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 금남로 75번지", "roadAddress": "광주 금남로로 16번길", "storePhoneNum": "062-1092", "storeUrl": "https://img.store92.jpg", "location": {"lat": 35.192, "lon": 126.892}}
+{"index": {"_index": "store", "_id": "93"}}
+{"storeUid": 93, "storeName": "세븐일레븐", "storeType": "CONVENIENCE_STORE", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 금남로 54번지", "roadAddress": "광주 금남로로 21번길", "storePhoneNum": "062-1093", "storeUrl": "https://img.store93.jpg", "location": {"lat": 35.193, "lon": 126.893}}
+{"index": {"_index": "store", "_id": "94"}}
+{"storeUid": 94, "storeName": "스토어24 충장로점", "storeType": "CONVENIENCE_STORE", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 화정동 153번지", "roadAddress": "광주 화정동로 39번길", "storePhoneNum": "062-1094", "storeUrl": "https://img.store94.jpg", "location": {"lat": 35.194, "lon": 126.894}}
+{"index": {"_index": "store", "_id": "95"}}
+{"storeUid": 95, "storeName": "광주맛집 광천점", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 동구 두암동 58번지", "roadAddress": "광주 두암동로 6번길", "storePhoneNum": "062-1095", "storeUrl": "https://img.store95.jpg", "location": {"lat": 35.195, "lon": 126.895}}
+{"index": {"_index": "store", "_id": "96"}}
+{"storeUid": 96, "storeName": "롯데시네마 중앙로점", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 충장로 46번지", "roadAddress": "광주 충장로로 21번길", "storePhoneNum": "062-1096", "storeUrl": "https://img.store96.jpg", "location": {"lat": 35.196, "lon": 126.896}}
+{"index": {"_index": "store", "_id": "97"}}
+{"storeUid": 97, "storeName": "파리바게뜨 광천점", "storeType": "BAKERY", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 충장로 67번지", "roadAddress": "광주 충장로로 47번길", "storePhoneNum": "062-1097", "storeUrl": "https://img.store97.jpg", "location": {"lat": 35.197, "lon": 126.897}}
+{"index": {"_index": "store", "_id": "98"}}
+{"storeUid": 98, "storeName": "씨네Q 금남로점", "storeType": "MOVIE_THEATER", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 화정동 137번지", "roadAddress": "광주 화정동로 16번길", "storePhoneNum": "062-1098", "storeUrl": "https://img.store98.jpg", "location": {"lat": 35.198, "lon": 126.898}}
+{"index": {"_index": "store", "_id": "99"}}
+{"storeUid": 99, "storeName": "스킨케어룸 금남로점", "storeType": "BEAUTY", "storeTypeDesc": "카테고리", "address": "광주광역시 북구 봉선동 89번지", "roadAddress": "광주 봉선동로 11번길", "storePhoneNum": "062-1099", "storeUrl": "https://img.store99.jpg", "location": {"lat": 35.199, "lon": 126.899}}
+{"index": {"_index": "store", "_id": "100"}}
+{"storeUid": 100, "storeName": "광주맛집 중앙로점", "storeType": "RESTAURANT", "storeTypeDesc": "카테고리", "address": "광주광역시 서구 봉선동 29번지", "roadAddress": "광주 봉선동로 1번길", "storePhoneNum": "062-1100", "storeUrl": "https://img.store100.jpg", "location": {"lat": 35.2, "lon": 126.9}}

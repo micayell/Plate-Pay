@@ -1,0 +1,20 @@
+# NumPy 1.x 강제 고정 (가장 먼저)
+numpy==1.24.3
+
+# 기본 패키지 (NumPy 호환 버전)
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pillow==9.5.0
+
+# OpenCV 헤드리스 버전 (NumPy 1.24 호환)
+opencv-python-headless==4.8.1.78
+
+# PyTorch는 Dockerfile에서 별도 설치
+
+# AI 모델 (NumPy 1.24 호환)
+easyocr==1.7.0
+ultralytics==8.0.196
+
+# NumPy 2.x 방지 (명시적으로)
+numpy<2.0

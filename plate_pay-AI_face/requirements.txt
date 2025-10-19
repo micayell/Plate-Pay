@@ -1,0 +1,10 @@
+# FastAPI 및 서버
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# 이미지 처리
+pillow==9.5.0
+
+# 얼굴 인식 (DeepFace 베이스 이미지에 이미 포함되어 있음)
+# deepface는 베이스 이미지에서 제공

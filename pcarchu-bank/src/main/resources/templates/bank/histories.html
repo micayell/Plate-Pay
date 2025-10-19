@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title>거래 내역</title>
+  <link rel="stylesheet" th:href="@{/css/bank.css}"/>
+  <script th:src="@{/js/bank.js}"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <span th:text="${memberName + '님 환영합니다'}" style="color: white"></span>
+    <a href="/banks/accounts">계좌 목록</a>
+    <a href="/banks/create">계좌 생성</a>
+    <button onclick="logout()">로그아웃</button>
+  </nav>
+</header>
+
+<main>
+  <h2>거래 내역</h2>
+  <h3>거래 내역은 현재 날짜만 조회됩니다.</h3>
+  <table>
+    <thead>
+    <tr>
+      <th>거래 날짜</th>
+      <th>거래 시간</th>
+      <th>거래 금액</th>
+      <th>거래 후 잔액</th>
+      <th>거래 요약</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="history : ${histories}">
+      <td th:text="${#strings.substring(history.transactionDate,0,4)
+              + '.' + #strings.substring(history.transactionDate,4,6)
+              + '.' + #strings.substring(history.transactionDate,6,8)}"></td>
+      <td th:text="${#strings.substring(history.transactionTime,0,2)
+              + ':' + #strings.substring(history.transactionTime,2,4)
+              + ':' + #strings.substring(history.transactionTime,4,6)}"></td>
+      <td th:text="${history.transactionBalance}"></td>
+      <td th:text="${#numbers.formatInteger(history.transactionAfterBalance, 3, 'COMMA')}"></td>
+      <td th:text="${history.transactionSummary}"></td>
+    </tr>
+    </tbody>
+  </table>
+  <a href="/banks/accounts" class="btn">← 계좌 목록으로</a>
+</main>
+</body>
+</html>

@@ -1,0 +1,356 @@
+spring:
+  profiles:
+    default: dev
+
+  jackson:
+    time-zone: Asia/Seoul
+
+  #THYMELEAF
+  thymeleaf:
+    cache: false
+    check-template: true
+    check-template-location: true
+    enabled: true
+    encoding: UTF-8
+    mode: HTML
+    prefix: classpath:templates/
+    suffix: .html
+    template-resolver-order: 1
+
+  # Database
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use_sql_comments: true
+      jdbc:
+        time_zone: Asia/Seoul
+    show-sql: true
+
+  # MULTIPART
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB
+      max-request-size: 215MB
+
+  # email
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: yolo.bringit.207
+    password: lhuf hwoa qgwd jlpj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          starttls:
+            enable: true
+
+  # oauth
+  security:
+    oauth2:
+      client:
+        provider:
+          kakao:
+            authorization-uri: https://kauth.kakao.com/oauth/authorize
+            token-uri: https://kauth.kakao.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user-name-attribute: id
+          ssafy:
+            authorization-uri: https://project.ssafy.com/oauth/sso-check
+            token-uri: https://project.ssafy.com/ssafy/oauth2/token
+            user-info-uri: https://project.ssafy.com/ssafy/resources/userInfo
+            user-name-attribute: userId
+        registration:
+          kakao:
+            client-id: ${KAKAO_CLIENT_ID}
+            client-secret: ${KAKAO_CLIENT_SECRET}
+            client-authentication-method: client_secret_post
+            redirect-uri: ${OAUTH_REDIRECT_HOST}/login/oauth2/code/kakao
+            authorization-grant-type: authorization_code
+            client-name: kakao
+            scope:
+              - profile_nickname
+              - profile_image
+              - account_email
+          ssafy:
+            provider: ssafy
+            client-id: ${SSAFY_CLIENT_ID}
+            client-secret: ${SSAFY_CLIENT_SECRET}
+            authorization-grant-type: authorization_code
+            client-authentication-method: client_secret_post
+            redirect-uri: ${OAUTH_REDIRECT_HOST}/login/oauth2/code/ssafy
+            scope: [ ]
+
+  # cache
+  cache:
+    type: caffeine
+
+  # redis
+  data:
+    redis:
+      port: ${SPRING_REDIS_PORT}
+      host: ${SPRING_REDIS_HOST}
+
+# SSAFY
+ssafy:
+  api:
+    key: ${SSAFY_FINANCIAL_KEY}
+    url: https://finopenapi.ssafy.io
+
+# OCR
+ocr:
+  api:
+    url: http://j13c108.p.ssafy.io:8000
+
+# FACE
+face:
+  api:
+    url: http://j13c108.p.ssafy.io:8100
+
+# CODEF
+codef:
+  api:
+    client-id: 01a1a57b-9ec1-4fd0-b88b-2b373b33a00a
+    client-secret: efcd123d-ebe5-4f7e-94bf-1ad03ced21a6
+    url: https://development.codef.io
+
+# JWT
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 1296000000
+
+# S3/R2
+aws:
+  s3:
+    publicUrl: https://pub-1b87520b13004863b6faad8458f37850.r2.dev
+    endpointUrl: https://893ddb890911cb604dfcb67dbb99057c.r2.cloudflarestorage.com
+    bucket: yolo-bringit
+    region: APAC
+  accessKey: 41fa6efee1a1029b21a8086312e801c1
+  secretKey: 55115f9f5018f9c0d3400c9bee21481d2d12a19e8aaa928f2f9e941372d77f80
+
+# swagger
+springdoc:
+  swagger-ui:
+    enabled: true
+    display-request-duration: true
+
+swagger:
+  server-url: http://localhost:8080
+
+server.port: 8080
+
+app:
+  front.url: http://localhost:8081
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        jdbc.lob.non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+
+app:
+  front.url: http://localhost:8081,http://localhost:5173
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      idle-timeout: 30000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+
+    driver-class-name: org.postgresql.Driver
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: false
+        jdbc.lob.non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: plate
+    show-sql: false
+    database: postgresql
+    open-in-view: false
+
+  data:
+    redis:
+      host: ${SPRING_REDIS_HOST}
+      port: ${SPRING_REDIS_PORT}
+      repositories:
+        enabled: false
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          starttls:
+            enable: true
+
+  elasticsearch:
+    uris: ${ELASTIC_URI}
+    connection-timeout: 5s
+    socket-timeout: 30s
+
+
+server:
+  port: ${SPRING_PORT}
+  forward-headers-strategy: framework
+
+# JWT
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 1296000000
+
+# S3/R2
+aws:
+  s3:
+    publicUrl: ${AWS_PUBLIC_URL}
+    endpointUrl: ${AWS_ENDPOINT_URL}
+    bucket: ${AWS_BUCKET}
+    region: ${AWS_REGION}
+  accessKey: ${AWS_ACCESS_KEY}
+  secretKey: ${AWS_SECRET_KEY}
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    display-request-duration: true
+
+logging:
+  level:
+    root: INFO
+    org.hibernate.SQL: WARN
+    org.hibernate.type.descriptor.sql: WARN
+    org.elasticsearch.client: DEBUG
+    org.springframework.data.elasticsearch.client.WIRE: TRACE
+    org.springframework.security.web.access: DEBUG
+    org.springframework.security.access: DEBUG
+    org.springframework.security.authentication: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+app:
+  front.url: http://13.125.255.131:80,http://localhost:5173,https://juchajang-8cud.vercel.app
+
+swagger:
+  server-url: https://j13c108.p.ssafy.io
+
+---
+
+spring:
+  sql:
+    init:
+      mode: always
+      encoding: UTF-8
+  config:
+    activate:
+      on-profile: jinnodev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/platepay
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: love140515
+
+    # JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use_sql_comments: true
+    show-sql: true
+    defer-datasource-initialization: true
+
+    # email
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: yolo.bringit.207
+    password: lhuf hwoa qgwd jlpj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          starttls:
+            enable: true
+
+  # redis
+  data:
+    redis:
+      host: ${SPRING_REDIS_HOST}
+      port: ${SPRING_REDIS_PORT}
+
+  # JWT
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 1296000000
+
+# S3/R2
+aws:
+  s3:
+    publicUrl: https://pub-1b87520b13004863b6faad8458f37850.r2.dev
+    endpointUrl: https://893ddb890911cb604dfcb67dbb99057c.r2.cloudflarestorage.com
+    bucket: yolo-bringit
+    region: APAC
+  accessKey: 41fa6efee1a1029b21a8086312e801c1
+  secretKey: 55115f9f5018f9c0d3400c9bee21481d2d12a19e8aaa928f2f9e941372d77f80
+
+# swagger
+springdoc:
+  swagger-ui:
+    enabled: true
+    display-request-duration: true
+
+swagger:
+  server-url: http://localhost:8080/api/v1/users
+
+server.port: 8080
+
+app:
+  front.url: http://localhost:8081,http://localhost:5173
+

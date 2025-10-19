@@ -1,0 +1,41 @@
+.summaryLabel {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.summaryValue {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0064FF; /* 금액 색상을 빨간색에서 파란색으로 변경 */
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.backBtn {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 16px; /* 키패드와 통일 */
+  border: 1px solid #E5E7EB;
+  background-color: #F3F4F6; /* 키패드 기능키와 통일 */
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.backBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+}
+
+.backBtn:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  background-color: #e5e7eb;
+}
