@@ -337,8 +337,8 @@ aws:
     endpointUrl: https://893ddb890911cb604dfcb67dbb99057c.r2.cloudflarestorage.com
     bucket: yolo-bringit
     region: APAC
-  accessKey: 41fa6efee1a1029b21a8086312e801c1
-  secretKey: 55115f9f5018f9c0d3400c9bee21481d2d12a19e8aaa928f2f9e941372d77f80
+  accessKey: 
+  secretKey: 
 
 # swagger
 springdoc:
