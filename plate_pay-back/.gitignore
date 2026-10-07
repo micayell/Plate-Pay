@@ -38,3 +38,7 @@ out/
 
 .env
 .env.prod
+
+### Secret Files ###
+src/main/resources/application.yml
+src/main/resources/firebase/serviceAccountKey.json
